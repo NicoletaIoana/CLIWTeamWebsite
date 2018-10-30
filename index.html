@@ -11,10 +11,10 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Verdana, Geneva, sans-serif;
+
 }
 
-/* Style the side navigation */
 .sidenav {
     height: 100%;
     width: 200px;
@@ -27,7 +27,6 @@ body {
 }
 
 
-/* Side navigation links */
 .sidenav a {
     color: white;
     padding: 16px;
@@ -35,30 +34,123 @@ body {
     display: block;
 }
 
-/* Change color on hover */
 .sidenav a:hover {
-    background-color: #ddd;
+    background-color: white;
     color: black;
 }
 
-/* Style the content */
 .content {
     margin-left: 200px;
     padding-left: 20px;
+}
+
+.info{
+  margin: 5%;
+  color: grey;
+  padding: 2%;
+  font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.box{
+  border: 1px solid black;
+  color: black;
+  padding: 5%;
+}
+
+.content_box{
+  width: 87%;
+  border: 1px solid black;
+  margin:auto;
+  margin-top: 2%;
+  overflow: hidden;
+}
+
+.img_container img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin: 10px;
+}
+
+.notificanion_message{
+  color: black;
+  margin-top: 25px;
+  margin-left: 100px;
+}
+
+.raport{
+  margin-top: 10%;
 }
 </style>
 </head>
 <body>
 
 <div class="sidenav">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
+  <a href="#c1">Despre</a>
+  <a href="#c2">Membri</a>
+  <a href="#c3">Scholoary raport</a>
 </div>
 
 <div class="content">
-  <h2>CSS Template</h2>
-  <p>A full-height, fixed sidenav and content.</p>
+  <h2 id="c1"> Despre</h2>
+
+  <div class="info">
+    <hr>
+  <p> Proiectul realizat poate fi gasit <a href="https://github.com/deliadominte/CLIW_Project">aici</a>. Proiectul a fost propus in cadrul
+disciplinei "Dezvoltarea aplicatiilor web la nivel de client", fiind al 16-lea proiect din <a href="https://profs.info.uaic.ro/~busaco/teach/courses/cliw/web-projects.html">lista de propuneri</a>. Wireframe-urile aplicatiei se gasesc <a href="https://app.moqups.com/bni/8KIGKxDyZV/view/page/ad64222d5">aici</a>.
+</p>
+
+  <p> Enunt: </p>
+  <p class="box"> Să se dezvolte o aplicaţie de tip PWA (Progressive Web App) menită a încuraja interacţiunea dintre persoanele care studiază/lucrează în localuri comune disponibile într-un areal geografic: biblioteci, cafenele sau spaţii de co-working. Fiecare utilizator, autentificat via un cont disponibil pe o reţea socială, odată ajuns într-un astfel de spaţiu va anunţa public ce activitate efectuează – astfel de mesaje vor putea fi parametrizate (de exemplu, "implementez _software_folosind pentru front-end _bibliotecă_ şi ca back-end _platforma_ pentru _limbajul de programare_" sau "studiez _concept|tehnologie_"). De asemenea, fiecare persoană participantă va oferi lista abilităţilor în funcţie de o anumită sarcină de efectuat – e.g., "pentru _programare_ ştiu ca _expert|novice_ _limbaj|paradigmă|framework>, iar pentru _design_ am lucrat cu _software_". Toţi utilizatorii interesaţi de aceste tehnologii/abilităţi vor primi automat o notificare aferentă, sistemul oferind suport pentru realizarea de conversaţii (a)sincrone, invitaţii de întâlnire "la o cafea", partajare de calendare comune etc. De asemenea, utilizatorii vor putea vizualiza într-o manieră atractivă care sunt cele mai populare locuri din oraş şi ce tipuri de persoane le frecventează (de exemplu, la BCU vin mulţi dezvoltatori JavaScript pasionaţi de numismatică). Inspiraţie: Progressive Web Apps Rocks..
+</p>
+</div>
+
+<h2 id="c2"> Membri</h2>
+
+<div class="content_box">
+    
+  <div class="img_container">
+    <img src="delia.png" alt="Avatar">
+  </div>
+
+  <div class="notificanion_message">
+    Dominte Delia, grupa IIIA4</a> 
+  </div>
+
+</div>
+
+<div class="content_box">
+    
+  <div class="img_container">
+    <img src="nico.png" alt="Avatar">
+  </div>
+
+  <div class="notificanion_message">
+    Bacaoanu Nicoleta Ioana, grupa IIIA4</a> 
+  </div>
+
+</div>
+
+
+<h2 class="raport" id="c3">Scholary raport</h2>
+
+  <div class="info">Raportul cerut se gaseste <a href="RaportScholary.html">aici</a>.
+    Acesta contine:
+<ul>
+  <li>idei/concepte importante privind designul general (incluzând schiţe, wireframe-uri, planşe narative şi, eventual, prototipuri)</li>
+
+  <li>maniera de interacţiune cu utilizatorul</li>
+
+  <li>maniera de folosire a sistemului de management al codului-sursă ales.</li>
+
+</ul>
+  </div>
 </div>
 
 </body>
